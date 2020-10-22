@@ -1,0 +1,13 @@
+print ("Please enter your birthday")
+year = input("Year: ")
+month = input("Month (1-12): ")
+day = input("Date: ")
+
+from datetime import date
+now = date.today()
+
+birthdate = date(int(year), int(month), int(day))
+
+age =  now-birthdate
+
+print ("Your age is %s" % age)
